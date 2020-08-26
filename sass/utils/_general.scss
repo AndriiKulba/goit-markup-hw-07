@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    
+  }
+  
+  img {
+    display: block;
+  }
+
+  .list {
+    padding-left: 0px;
+    list-style: none;
+  }
