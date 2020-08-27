@@ -1,0 +1,80 @@
+.header-page {
+    background-color: var(--logo-bgr-color);
+  }
+  
+  .main-navi {
+    @extend %flex-center;
+    justify-content: none;
+  
+    
+  .menu-navi {
+    display: flex;
+    margin-left: 85px;
+  
+  & .item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+}
+
+.link-navi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+  
+    color: $secondary-color;
+  
+    @include trans-on (color);
+  }
+
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .contacts .item {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .contacts .item + .item {
+    margin-left: 30px;
+  }
+    
+  .contacts-link {
+    @extend .link-navi;
+    color: $primary-text-color;
+    fill: $primary-text-color;
+  
+    @include trans-on (fill);
+    @include trans-on (color);
+  }
+  
+  .mail-icon {
+    width: 16px;
+    height: 11.2px;
+    margin-right: 10px;
+  }
+  
+  .phone-icon {
+    width: 10px;
+    height: 14.94px;
+    margin-right: 10px;
+  }
+  
+  .link-navi:hover,
+  .link-navi:focus,
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: var(--weblog-btn-link);
+    fill: var(--weblog-btn-link);
+  }
+  
+  
