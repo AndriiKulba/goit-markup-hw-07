@@ -32,31 +32,42 @@
     color: $secondary-color;
   
     @include trans-on (color);
+    &:hover,
+    &:focus {
+    color: $weblog-btn-link;
+    fill: $weblog-btn-link;
   }
+}
 
-  .contacts {
-    display: flex;
-    margin-left: auto;
-  }
+.contacts {
+  display: flex;
+  margin-left: auto;
+ 
   
-  .contacts .item {
+  & .item {
     display: inline-flex;
     align-items: center;
-  }
   
-  .contacts .item + .item {
-    margin-left: 30px;
+  
+    & + .item {
+      margin-left: 30px;
+    }
   }
+}
     
-  .contacts-link {
-    @extend .link-navi;
-    color: $primary-text-color;
-    fill: $primary-text-color;
+.contacts-link {
+  @extend .link-navi;
+  color: $primary-text-color;
+  fill: $primary-text-color;
   
-    @include trans-on (fill);
-    @include trans-on (color);
+  @include trans-on-sec (fill, color);
+  
+  &:hover,
+  &:focus {
+    color: $weblog-btn-link;
+    fill: $weblog-btn-link;
   }
-  
+
   .mail-icon {
     width: 16px;
     height: 11.2px;
@@ -68,13 +79,6 @@
     height: 14.94px;
     margin-right: 10px;
   }
-  
-  .link-navi:hover,
-  .link-navi:focus,
-  .contacts-link:hover,
-  .contacts-link:focus {
-    color: var(--weblog-btn-link);
-    fill: var(--weblog-btn-link);
-  }
+}
   
   

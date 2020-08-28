@@ -1,6 +1,38 @@
-.box-section .container,
-.team-section .container,
-.client-section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.6667;
+  color: $secondary-color;
+}
+
+.box-flexcont {
+  display: flex;
+
+
+  .box-element {
+    position: relative;
+    width: calc((100%-60px) / 3);
+    margin-right: 30px;
+  
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+}
+
+.box {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  font-weight: bold;
+  line-height: 1.1428;
+  color: $logo-bgr-color;
+  background: $bgr-box;
+  text-transform: uppercase;
+
+  @extend %flex-center;
 }

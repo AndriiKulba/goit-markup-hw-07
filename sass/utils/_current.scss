@@ -1,5 +1,5 @@
 .current {
-    color: var(--weblog-btn-link);
+    color: $weblog-btn-link;
     position: relative;
     
   &::before {
@@ -9,7 +9,7 @@
     height: 4px;
     bottom: 0px;
     left: 0px;
-    background: var(--weblog-btn-link);
+    background: $weblog-btn-link;
     border-radius: 2px;
   }
 }

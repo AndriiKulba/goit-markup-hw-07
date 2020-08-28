@@ -1,25 +1,26 @@
 * {
-    margin: 0;
-    border: 0;
-    text-decoration: none;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+}
+  
+html {
+  box-sizing: border-box;
   }
   
-  html {
-    box-sizing: border-box;
-  }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-    
-  }
-  
-  img {
-    display: block;
-  }
+img {
+  display: block;
+}
 
-  .list {
-    padding-left: 0px;
-    list-style: none;
-  }
+.list {
+  padding-left: 0px;
+  list-style: none;
+}
+
+body {
+  @extend %font;
+}
