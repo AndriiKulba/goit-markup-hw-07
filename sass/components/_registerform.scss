@@ -84,27 +84,27 @@
     color: $weblog-btn-link;
     text-decoration: underline;
   }
+}
 
-  .icon-check {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
+.icon-check {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 
-    display: inline-flex;
-    width: 16px;
-    height: 15px;
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
 
-    border: 2px solid $secondary-color;
-    border-radius: 2px;
-    box-sizing: border-box;
+  border: 2px solid $secondary-color;
+  border-radius: 2px;
+  box-sizing: border-box;
 
-    @include trans-on-sec(background-color, border);
+  @include trans-on-sec(background-color, border);
 
-    .form-checkinp:checked + & {
-      background-color: $weblog-btn-link;
-      border: none;
-    }
+  .form-checkinp:checked + & {
+    background-color: $weblog-btn-link;
+    border: none;
   }
 }
 
