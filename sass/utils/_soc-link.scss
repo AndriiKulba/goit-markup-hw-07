@@ -7,9 +7,9 @@
   border-radius: 50%;
   background-color: $logo-bgr-color 10%;
   fill: $clnt-bord;
-  
-  @include trans-on-sec (background-color, fill);
-  
+
+  @include trans-on-sec(background-color, fill);
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -18,10 +18,9 @@
     background: $footsoc-bgr;
     fill: $logo-bgr-color;
   }
-  
+
   &:hover {
     background-color: $weblog-btn-link;
     fill: $logo-bgr-color;
   }
 }
-

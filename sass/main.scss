@@ -1,5 +1,7 @@
 @import "../sass/utils/variables";
+@import "../sass/base/normalize";
 @import "../sass/utils/mixin";
+@import "../sass/base/font-url";
 @import "../sass/utils/font";
 @import "../sass/utils/general";
 @import "../sass/utils/container";
@@ -17,4 +19,8 @@
 @import "../sass/components/client";
 @import "../sass/components/footer";
 @import "../sass/components/foot-form";
-
+@import "../sass/components/backdrop";
+@import "../sass/components/input-form";
+@import "../sass/components/registerform";
+@import "../sass/components/portfolio";
+@import "../sass/components/portfol-hover";
