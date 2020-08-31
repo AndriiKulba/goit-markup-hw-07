@@ -1179,7 +1179,7 @@ img {
   overflow: hidden;
 }
 
-.portf-thumb .portfol-title {
+.portfol-title {
   display: inline-block;
   width: 322px;
   margin-top: 20px;
@@ -1191,7 +1191,7 @@ img {
   color: #212121;
 }
 
-.portf-thumb .portf-sub {
+.portf-sub {
   display: inline-block;
   width: 322px;
   margin-bottom: 20px;
@@ -1201,8 +1201,8 @@ img {
   color: #757575;
 }
 
-.portf-thumb .portfol-title,
-.portf-thumb .portf-sub {
+.portfol-title,
+.portf-sub {
   margin-right: 24px;
   margin-left: 24px;
 }
